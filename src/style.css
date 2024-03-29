@@ -1,0 +1,105 @@
+body {
+  background-image: radial-gradient(
+    circle,
+    #d6d08e,
+    #e1d39c,
+    #e9d6ac,
+    #efdbbc,
+    #f2e0cc,
+    #f5decd,
+    #f7dccf,
+    #f8dbd2,
+    #fed0cd,
+    #ffc6ce,
+    #ffbcd5,
+    #f7b5e1
+  );
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #a99f3d;
+}
+
+.container {
+  max-width: 600px;
+  margin: 200px auto 20px;
+  padding: 0 20px 30px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #f6664c;
+}
+
+h3 {
+  color: #a99f3d;
+  font-weight: 300;
+}
+
+form {
+  text-align: center;
+}
+
+.example {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.user-instructions {
+  width: 70%;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50px;
+  border: 1px solid #f6664c;
+  transition: border-color 0.3s;
+}
+.button {
+  padding: 10px 20px;
+  margin-left: 5px;
+  width: 20%;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  background-color: #f6664c;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #f0fcf6;
+  border: 1px solid #f6664c;
+  color: #f6664c;
+  cursor: pointer;
+}
+
+.generated-recipe {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(224, 239, 247, 0.158);
+  box-shadow: 10px 10px 5px rgba(248, 188, 196, 0.2);
+  font-size: 16px;
+  font: bold;
+  color: #333333;
+  border-left: 3px solid #f6664c;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  color: #333333;
+}

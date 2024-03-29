@@ -4,38 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
     <title>Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>SweetMood</h1>
-      <h3>AI-Driven Dessert Recommendations Based on Emotions</h3>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="How is your feeling?"
-          required
-          autocomplete="off" />
-        <input type="submit" />
-      </form>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Konnichiwaitsnahoko" target="_blank"
-        >Nahoko Park</a
-      >
-      and is open-sourced on
-      <a
-        href="https://github.com/Konnichiwaitsnahoko/Poem-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and is hosted by
-      <a href="https://tellmepoem.netlify.app/" target="_blank">Netlify</a>.
-    </footer>
-
+    <div class="container">
+      <header>
+        <h1>SweetMood</h1>
+        <h3>AI-Driven Dessert Recommendations Based on Emotions</h3>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="How is your feeling?"
+            required
+            autocomplete="off"
+            class="user-instructions" />
+          <input type="submit" value="Submit" class="button" />
+          <p class="example">i.g. happy, relaxed or surprised etc...</p>
+        </form>
+        <div class="generated-recipe">
+          <p>Generated recipe is display here</p>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Konnichiwaitsnahoko" target="_blank"
+          >Nahoko Park</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/Konnichiwaitsnahoko/Poem-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and is hosted by
+        <a href="https://tellmepoem.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
