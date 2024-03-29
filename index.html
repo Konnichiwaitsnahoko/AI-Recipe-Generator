@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Recipe Generator</title>
   </head>
   <body>
@@ -23,19 +17,18 @@
         <h3>AI-Driven Dessert Recommendations Based on Emotions</h3>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
-            placeholder="How is your feeling?"
+            placeholder="How are you feeling?"
             required
             autocomplete="off"
-            class="user-instructions" />
+            class="user-instructions"
+            id="user-instructions" />
           <input type="submit" value="Submit" class="button" />
-          <p class="example">i.g. happy, relaxed or surprised etc...</p>
+          <p class="example">e.g., happy, relaxed, surprised, etc...</p>
         </form>
-        <div class="generated-recipe">
-          <p>Generated recipe is display here</p>
-        </div>
+        <div class="generated-recipe hidden" id="generated-recipe"></div>
       </main>
       <footer>
         This AI project was coded by
