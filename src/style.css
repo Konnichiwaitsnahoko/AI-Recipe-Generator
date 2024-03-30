@@ -15,7 +15,8 @@ body {
     #f7b5e1
   );
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
+  background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -97,6 +98,10 @@ form {
   border-left: 3px solid #f6664c;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
@@ -119,4 +124,40 @@ footer {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-direction: alternate;
+}
+
+.recipe-heading,
+.ingredient-heading,
+.instruction-heading {
+  font-weight: bold;
+  color: #f6664c;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  form {
+    padding: 15px;
+  }
+  .container {
+    min-width: 250px;
+  }
+  .form {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .button {
+    padding: 10px 15px;
+  }
+  .user-instructions {
+    padding: 10px;
+    line-height: 1.5;
+  }
+  .example {
+    margin-top: 5px;
+    margin-left: 0;
+  }
 }
